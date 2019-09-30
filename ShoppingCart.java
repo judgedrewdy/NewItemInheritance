@@ -98,4 +98,15 @@ public class ShoppingCart {
 			cartItems.get(i).printItemDescription();
 		}
 	}
+	
+	public MyInheritedItem findMyInheritedItem() {
+		for (int i = 0; i < cartItems.size(); i ++)  {
+			if (cartItems.get(i) instanceof MyInheritedItem) {
+				return (MyInheritedItem)cartItems.get(i);
+			}
+		}
+		return null;
+	}
+	
+	
 }

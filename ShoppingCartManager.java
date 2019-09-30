@@ -134,7 +134,7 @@ public class ShoppingCartManager {
 			}
 			else if (userInput.equals("s")) {
 				
-				//System.out.println(.toString());
+				System.out.println(cart.findMyInheritedItem().toString());
 			}
 			else {
 				System.out.println("Choose an option:");
