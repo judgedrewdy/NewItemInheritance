@@ -1,4 +1,3 @@
-
 public class MyInheritedItem extends ItemToPurchase {
 	private String expirationDate;
 	private double weight;

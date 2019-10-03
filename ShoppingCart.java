@@ -42,6 +42,10 @@ public class ShoppingCart {
 		}
 	}
 	
+//	public int getNumOfItems() {
+//		return cartItems.size();
+//	}
+	
 	public void modifyItem(ItemToPurchase item) {
 		int i;
 		boolean found = false;
@@ -99,13 +103,12 @@ public class ShoppingCart {
 		}
 	}
 	
-	public MyInheritedItem findMyInheritedItem() {
+	public void printInheritedItem() {
 		for (int i = 0; i < cartItems.size(); i ++)  {
 			if (cartItems.get(i) instanceof MyInheritedItem) {
-				return (MyInheritedItem)cartItems.get(i);
+				System.out.println(cartItems.get(i).toString());
 			}
 		}
-		return null;
 	}
 	
 	
